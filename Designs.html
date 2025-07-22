@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial;
+            padding: 5px;
+            background: rgb(12, 15, 56);
+        }
+        .header {
+            font-size: 2 rem;
+        color: rgb(1, 1, 44);
+        background-color: aqua;
+        border: 0.5rem soid white;
+        border-radius: 5px;
+        padding: 2px;
+        text-align: center;
+        margin : 3px 2px 40px 2px;
+        }
+
+
+
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding:  3px 10px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .card a{
+            text-decoration: none;
+            color:black;
+        }
+        .articles :hover {
+            background-color: rgb(30, 213, 226);
+
+        }
+        .footer-links {
+            float: left;
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        .footer-links a:hover {
+            color: rgb(244, 248, 7) !important;
+        }
+
+        .footer-distributed {
+            margin-top: 1rem;
+            background-color: #292c2f;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+
+            text-align: left;
+            font: normal 16px sans-serif;
+            padding: 45px 50px;
+        }
+
+        .footer-distributed .footer-left p {
+            color: #8f9296;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Footer links */
+
+        .footer-distributed p.footer-links {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0 0 10px;
+            padding: 0;
+            transition: ease .25s;
+        }
+
+        .footer-distributed p.footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+            transition: ease .25s;
+        }
+
+        .footer-distributed .footer-links a:before {
+            content: "·";
+            font-size: 20px;
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .footer-distributed .footer-links .link-1:before {
+            content: none;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>My Articles</h2>
+    </div>
+
+    <div class="row">
+        <div class="articles">
+            <div class="card">
+                <a href="\articles\5 EXPERT TIPS TO HELP YOU BUY A LUXURY HOME IN 2022.docx" download><h1>5 Expert tips to buy a luxury home in 2023</h1></a>
+                <p> You will able to learn art of buying a best real estate in this upcoming years...</p>
+                <p> 3-Sept 2022</p>
+            </div>
+            <div class="card">
+               <a href="/articles/Every thing happens for a reason.docx" download><h1><b>Everything happens for a reason</b></h1></a>
+                <p> A small story of a girl and his father which teaches a good lesson to all of us....</p>
+                <p>6-May 2022</p>
+            </div>
+            <div class="card">
+               <a href="articles/Best Attractive Font for a Resume.pdf" download><h1><b>Best Attractive Font for a Resume</b></h1></a>
+                <p> Best fonts to be used while creating a resume.</p>
+                <p>5-May 2022</p>
+            </div>
+            <div class="card">
+              <a href="/articles/15 Best Game Booster and optimizers for Windows PC in 2021.docx" download > <h1><b>15 Best Game Booster and optimizers for windows </b></h1></a>
+                <p> Ways to make your PC more optimal. </p>
+                <p>30-june 2022</p>
+            </div>
+            <div class="card">
+               <a href="/articles/5 Reasons Why India Lost in World test champion against New Zealand.edited.docx" download > <h1><b>5 Reasons for India's Failure in WTC</b></h1></a>
+                <p> Must understand so next time we don't lack in anything</p>
+                <p>8-july 2022</p>
+            </div>
+            <div class="card">
+               <a href="/articles/Pink birds which increase the beauty of nature.docx" download > <h1><b>Pink Birds which increases the beauty of nature</b></h1></a>
+                <p> Beauty of our mother nature...</p>
+                <p>3-april 2022</p>
+            </div>
+            <div class="card">
+                <a href="/articles/Impact of Covid.docx" download><h1><b>Impact of Covid-19</b></h1></a>
+                <p> What corona virus left behind...</p>
+                <p> 20-Feb 2021</p>
+            </div>
+        </div>
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a class="link-1" href="/index.html">Home</a>
+
+                    <a href="/articles.html">Designs</a>
+
+                    <a href="/Designs.html">Articles</a>
+
+                    <a href="/aboutme.html">About</a>
+
+                    <a href="/contacts.html">Contact</a>
+                </p>
+
+                <p align="right">
+                    <h8>Pranay Portfolio</h8>
+                </p>
+            </div>
+
+        </footer>
+</body>
+
+</html>

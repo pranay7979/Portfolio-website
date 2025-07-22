@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(12, 15, 56);
+        color: white;
+    }
+
+    .first {
+
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 20px 100px 0px;
+    }
+
+    .hi {
+        font-size: 2rem;
+        margin: 5px 20px;
+    }
+
+    #image {
+        border-radius: 8px;
+        border: 0.3rem solid white;
+
+    }
+
+    #pic {
+        text-align: center;
+    }
+
+    header {
+        font-size: 2.5rem;
+        color: rgb(1, 1, 44);
+        background-color: aqua;
+        border: 0.5rem soid white;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+
+    }
+
+    .head1 {
+        background-color: aqua;
+        color: rgb(1, 1, 44);
+        border-radius: 8px;
+        padding: 1px 5px;
+        width: 80%;
+
+    }
+
+    .footer-distributed {
+        background-color: azure;
+        display: block;
+    }
+
+    .footer-links {
+        float: left;
+        display: inline-block;
+        margin: 10px 20px;
+    }
+
+    .footer-links a:hover {
+        color: rgb(244, 248, 7) !important;
+    }
+
+    .footer-distributed {
+        background-color: #292c2f;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: normal 16px sans-serif;
+        padding: 45px 50px;
+    }
+
+    .footer-distributed .footer-left p {
+        color: #8f9296;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .footer-distributed p.footer-links {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+        transition: ease .25s;
+    }
+
+    .footer-distributed p.footer-links a {
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+        transition: ease .25s;
+    }
+
+    .footer-distributed .footer-links a:before {
+        content: "·";
+        font-size: 20px;
+        left: 0;
+        color: #fff;
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    .footer-distributed .footer-links .link-1:before {
+        content: none;
+    }
+
+    @media screen and (max-width: 800px) {
+        .first {
+            display: block;
+            float: left;
+        }
+
+        .footer-distributed {
+            max-height: 3rem;
+            margin: 100rem 0px 0px 0px;
+        }
+
+
+    }
+</style>
+
+<body>
+    <header>
+        About Me
+    </header>
+    <section class="first">
+        <div class="hi">
+
+            <p>
+                Hi,<br>
+                I’m Pranay, a passionate developer with a focus on creating seamless and <br>user-friendly websites.
+                With expertise in web development and java Programming and a commitment to staying ahead in the tech
+                world, I thrive on solving challenges through clean, efficient code.
+                I’m always exploring new tools and trends to bring fresh ideas to life.
+                <br> Let’s connect and make something
+                amazing together!
+
+
+            </p>
+            <p>
+            <div class="head1">Education:</div>
+            M.tech IT(SDE) at IIIT Allahabad<br>
+            B.tech in Computer Science and Engineering(CSE)
+            <br>
+            <p>
+            <div class="head1">Skills:</div>
+            <li>Web Development</li>
+            <li>Content Writer</li>
+            <li>Graphic Designing</li>
+            </p>
+            <P>
+            <div class="head1">Technology:</div>
+            <li>Java</li>
+            <li>HTML 5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            </P>
+            <p>
+            <div class="head1"> Soft Skills:</div>
+            <li>Leadership</li>
+            <li>Coordinative</li>
+            <li>Time flexible</li>
+            <li>Multi-tasking</li>
+            </p>
+
+            </p>
+        </div>
+        <div id="pic">
+            <img id="image" src="/images/IMG_20210516_154206 (2).jpg" height="400px">
+        </div>
+    </section>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="/index.html">Home</a>
+
+                <a href="/articles.html">Designs</a>
+
+                <a href="/Designs.html">Articles</a>
+
+                <a href="/aboutme.html">About</a>
+
+                <a href="/contacts.html">Contact</a>
+            </p>
+
+            <p align="right">
+                <h8>Pranay Portfolio</h8>
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

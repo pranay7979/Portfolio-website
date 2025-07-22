@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PranayZone Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .popup {
+            position: fixed;
+            display: none;
+            width: 80%;
+            height: 80%;
+            top: 10%;
+            left: 10%;
+            background-color: white;
+            border: 1px solid #888;
+            z-index: 1000;
+            overflow: auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        body {
+            background-color: rgb(3, 6, 43);
+            color: white;
+        }
+
+        button {
+            font-size: large;
+            background-color: aqua;
+            padding: 15px;
+            margin: 30px 0px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+            border-color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: aqua;
+            color: rgb(3, 6, 43);
+        }
+
+        nav ul {
+            margin-left: 400px;
+            display: flex;
+            justify-content: center;
+            background-color: none;
+            font-size: 1.2rem;
+
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 20px;
+            margin-top: 20px;
+            margin: 150px 30px;
+            color: rgb(3, 6, 43);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: rgb(3, 6, 43);
+        }
+
+        nav ul li a:hover {
+            color: blue;
+
+
+
+
+        }
+
+        .left {
+            padding: 5px;
+        }
+
+        #element {
+            color: greenyellow;
+
+        }
+
+        nav div.left {
+            background-color: none;
+            font-size: 250%;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 20px 100px 0px;
+        }
+
+        .second2 {
+            display: inline-block;
+        }
+
+        .first div> {
+            width: 65%;
+
+        }
+
+        .second {
+            margin: 24px 100px;
+            margin-top: 3rem;
+
+            font-size: 2rem;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            justify-content: flex;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer,
+        .softwares {
+            margin: 24px 100px;
+            margin-top: 4rem;
+
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                margin-left: 0;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .leftsection {
+                font-size: 2rem;
+            }
+
+            .rightsection img {
+                width: 100%;
+            }
+
+            .columnA,
+            .columnB,
+            .columnC {
+                width: 100%;
+                float: none;
+            }
+
+            .footer,
+            .softwares {
+                margin: 24px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            nav ul li a {
+                font-size: 1rem;
+            }
+
+            nav {
+                height: 70px;
+            }
+
+            .leftsection {
+                font-size: 1.5rem;
+            }
+
+            .leftsection .btn {
+                font-size: 16px;
+            }
+        }
+
+
+
+        #service1 {
+            display: inline-block;
+            float: left;
+            justify-content: space-around;
+            padding: 32px;
+            margin: 24px 180px;
+            margin-top: 5rem;
+            font-size: 1rem;
+            background-color: rgb(110, 226, 226);
+            border: black;
+            border-radius: 32px;
+
+
+        }
+
+        #serimg {
+            margin: 0px 500px;
+            float: right;
+            display: inline-block;
+            justify-content: center;
+            background-color: aqua;
+
+        }
+
+        .columnA,
+        .columnB,
+        .columnC {
+            display: inline-block;
+            font-size: 1rem;
+            float: left;
+            width: 31%;
+            padding: 15px;
+            text-align: justify;
+        }
+
+        .leftsection {
+            background-color: none;
+            padding-top: 20px;
+            padding-left: 20px;
+            font-size: 3rem;
+
+
+        }
+
+        .leftsection .btn {
+            padding: 10px;
+            margin-top: 80px;
+            border: 4px solid indigo;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightsection img {
+            width: 90%;
+
+
+        }
+
+        #head1,
+        #head2,
+        #head3 {
+            color: rgb(6, 158, 158);
+        }
+
+        .columnA img,
+        .columnB img,
+        .columnC img {
+            margin-top: 6rem;
+            width: 75%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            border-radius: 2rem;
+        }
+
+
+        hr {
+            margin-top: 100px;
+            border: 0;
+            background-color: aqua;
+            height: 1.2px;
+            margin: 0px 80px;
+        }
+
+        div.gallery {
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            float: left;
+            width: 180px;
+            font-size: 25px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid white;
+            background-color: aqua;
+            color:#292c2f
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 12rem;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        #lan,
+        #soft {
+            font-size: 50px;
+            color: rgb(253, 252, 252);
+            margin: 15rem 0rem 3rem 0rem;
+            max-height: 5rem;
+        }
+
+        .end {
+            margin-top: 60rem;
+            justify-content: right;
+            background-color: aqua;
+            height: 2rem;
+            color: aqua;
+        }
+
+        .footer-distributed {
+            background-color: azure;
+            display: block;
+        }
+
+        .footer-links {
+            float: left;
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        .footer-distributed {
+            background-color: #292c2f;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: normal 16px sans-serif;
+            padding: 45px 50px;
+        }
+
+        .footer-distributed .footer-left p {
+            color: #8f9296;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Footer links */
+
+        .footer-distributed p.footer-links {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0 0 10px;
+            padding: 0;
+            transition: ease .25s;
+        }
+
+
+        .footer-distributed p.footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+            transition: ease .25s;
+        }
+
+        .footer-distributed .footer-links a:before {
+            content: "·";
+            font-size: 20px;
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .left {
+
+            margin: 5px;
+        }
+
+        .footer-links a:hover {
+            color: rgb(244, 248, 7) !important;
+        }
+
+
+        .footer-distributed .footer-links .link-1:before {
+            content: none;
+        }
+
+
+        @media screen and (max-width: 300px) {}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="left">
+                <h3>Pranay's Portfolio</h3>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/articles.html">Designs</a></li>
+                    <li><a href="/Designs.html">Articles<a /></li>
+                    <li><a href="/aboutme.html">About Me<a /></li>
+                    <li><a href="/contacts.html">Contact Me<a /></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="first">
+        <div class="leftsection">
+
+            Hello,
+            <div>Welcome to My Portfolio</div>
+            <div>I am a</div>
+            <span id="element"></span>
+            <br>
+            <button class="b2" onclick="openPopup()">Checkout Resume</button>
+
+            <!-- The popup -->
+            <div id="myPopup" class="popup">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <iframe src="Resume24.pdf" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+        <div class="rightsection">
+            <img src="portfolio.jpg">
+        </div>
+    </section>
+    <hr>
+    <section class="second">
+        <h1>Work Experience</h1>
+        <br>
+        <div class="row">
+
+            <div class="columnA">
+                <div id="head1">
+                    <h2>WEB DEVELOPER</h2>
+                </div>
+
+
+
+
+                <p>As a passionate web developer,
+                    I've had the privilege of bringing digital visions to life through elegant and functional websites.
+                    With a strong foundation in coding languages, responsive design, and user experience principles, I
+                    specialize in creating web solutions that seamlessly blend form and function.</p>
+
+                <img src="developer.png" id="img1">
+
+
+
+
+            </div>
+
+            <div class="columnB">
+                <div id="head2">
+                    <h2>GRAPHIC DESIGNER</h2>
+                </div>
+
+
+
+                <p>As a dedicated graphic designer, I've honed my skills in turning ideas into captivating visuals that
+                    leave a lasting impression. From logo designs that define brands to eye-catching marketing
+                    collateral, I specialize in creating graphic solutions that blend aesthetics with purpose.
+
+                    My graphic design journey has been marked by collaborations with a diverse array of clients, each
+                    with unique design challenges.</p>
+                <img src="/images/design2.jpg" id="img2">
+
+
+
+
+            </div>
+
+            <div class="columnC">
+                <div id="head3">
+                    <h2> CONTENT WRITER</h2>
+                </div>
+
+
+
+
+                <p>As a dedicated content writer, I've had the privilege of crafting engaging and informative content
+                    across a wide range of topics. Whether it's creating compelling blog posts, crafting SEO-optimized
+                    web copy, or developing thought-provoking articles, I approach each project with a passion for words
+                    and a commitment to excellence.</p>
+                <img src="writer.png" id="img3">
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+
+    <section class="footer">
+        <h1 id="lan">Languages
+        </h1>
+        <div class="gallery">
+            <a target="_blank" href="html.png">
+                <img src="html.png" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">HTML</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="css.png">
+                <img src="css.png" alt="Forest" width="500" height="200">
+            </a>
+            <div class="desc">CSS</div>
+        </div>
+
+
+
+        <div class="gallery">
+            <a target="_blank" href="js.png">
+                <img src="js.png" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">JavaScript</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="java.png">
+                <img src="java.png" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">Java</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="c.png">
+                <img src="c.png" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">C</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="python.png">
+                <img src="python.png" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">Python</div>
+        </div>
+    </section>
+
+    <br>
+
+    <section class="softwares">
+        <h1 id="soft">Softwares</h1>
+
+
+        <div class="gallery">
+            <a target="_blank" href="photoshop.png">
+                <img src="photoshop.png" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">Adobe Photoshop</div>
+        </div>
+
+
+        <div class="gallery">
+            <a target="_blank" href="ai.png">
+                <img src="ai.png" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">Adobe Illustrator</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="canva.png">
+                <img src="canva.png" alt="Northern Lights" width="600" height="300">
+            </a>
+            <div class="desc">Canva</div>
+            <br>
+        </div>
+
+
+
+
+
+
+
+        <section class="end">
+            <div>
+                <div>
+                    .
+
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        <footer class="footer-distributed">
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a class="link-1" href="/index.html">Home</a>
+
+                    <a href="/articles.html">Designs</a>
+
+                    <a href="/Designs.html">Articles</a>
+
+                    <a href="/aboutme.html">About</a>
+
+                    <a href="/contacts.html">Contact</a>
+                </p>
+
+                <p align="right">
+                    <h8>Pranay Portfolio</h8>
+                </p>
+            </div>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Web Developer', 'A Content Writer', 'A Graphic Designer.'],
+                typeSpeed: 100,
+            });
+            function openPopup() {
+                document.getElementById("myPopup").style.display = "block";
+            }
+
+            function closePopup() {
+                document.getElementById("myPopup").style.display = "none";
+            }
+        </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+<!--run 'nodemon'- starts server
+//live server runner
+// localhost:8000/register
+//open mongodb to show results-->

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranay's Designs</title>
+    <style>
+        body {
+            background-color: rgb(13, 13, 54);
+        }
+
+        .left {
+            font-size: 2.5rem;
+        color: rgb(1, 1, 44);
+        background-color: aqua;
+        border: 0.5rem soid white;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+        margin : 3px 2px 40px 2px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+        }
+
+        .right img {
+
+            width: 30%;
+            border-radius: 6px;
+
+        }
+
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow: visible;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 80%;
+            border: 1px solid none;
+            border-radius: 10px;
+            overflow: hidden;
+            object-fit: contain;
+            position: relative;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .gallery img:hover {
+            z-index: 9;
+            transform: scale(1.3);
+            transition: transform ease 0.5s;
+        }
+
+        .footer-distributed {
+            background-color: azure;
+            display: block;
+        }
+
+        .footer-links {
+            float: left;
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        .footer-links a:hover {
+            color: rgb(244, 248, 7) !important;
+        }
+
+        .footer-distributed {
+            background-color: #292c2f;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: normal 16px sans-serif;
+            padding: 45px 50px;
+        }
+
+        .footer-distributed .footer-left p {
+            color: #8f9296;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        
+        
+        .footer-distributed p.footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+            transition: ease .25s;
+        }
+
+        .footer-distributed .footer-links a:before {
+            content: "·";
+            font-size: 20px;
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .footer-distributed .footer-links .link-1:before {
+            content: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="left"><b>My Graphic Designs</b></div>
+
+    </header>
+    <div class="gallery">
+        <img src="/images/1.png" title="TITLE 1">
+        <img src="/images/3.png" title="TITLE 2">
+        <img src="/images/2.png" title="TITLE 2">
+        <img src="/images/4.png" title="TITLE 2">
+        <img src="/images/7.png" title="TITLE 3">
+        <img src="/images/6.png" title="TITLE 4">
+        <img src="/images/krishna.jpg" title="TITLE 5">
+        <img src="/images/Pranayzone.png" title="TITLE 6">
+        <img src="/images/landing-page-ytt-3.png" title="TITLE 7">
+        <img src="/images/design1.png" title="TITLE 8">
+        <img src="/images/design2.jpg" title="TITLE 9">
+        <img src="/images/45.jfif" title="TITLE 10">
+
+    </div>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="/index.html">Home</a>
+
+                <a href="/articles.html">Designs</a>
+
+                <a href="/Designs.html">Articles</a>
+
+                <a href="/aboutme.html">About</a>
+
+                <a href="/contacts.html">Contact</a>
+            </p>
+
+            <p align="right">
+                <h8>Pranay Portfolio</h8>
+            </p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
