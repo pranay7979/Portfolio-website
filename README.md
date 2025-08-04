@@ -15,4 +15,24 @@ Showcase your skills, projects, and contact info in a clean and interactive form
 - **Responsive design:** Mobile, tablet, and desktop friendly.
 - **Smooth navigation and simple interactivity** with vanilla JS.
 
+## 📸 Project Previews
+
+### Homepage
+![Homepage Preview](projectpreview/5.png)
+
+### About Section
+![About Section Preview](projectpreview/about.png)
+
+### Work Experience
+![Projects Gallery Preview](projectpreview/4.png)
+
+### Designs Gallery
+![Projects Gallery Preview](projectpreview/2.png)
+
+### Articles Gallery
+![Projects Gallery Preview](projectpreview/3.png)
+
+### Contact Form
+![Contact Form Preview](projectpreview/2.png)
+
 
