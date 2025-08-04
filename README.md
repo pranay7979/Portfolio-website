@@ -20,9 +20,6 @@ Showcase your skills, projects, and contact info in a clean and interactive form
 ### Homepage
 ![Homepage Preview](projectpreview/5.png)
 
-### About Section
-![About Section Preview](projectpreview/about.png)
-
 ### Work Experience
 ![Projects Gallery Preview](projectpreview/4.png)
 
