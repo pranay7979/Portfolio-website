@@ -24,7 +24,7 @@ Showcase your skills, projects, and contact info in a clean and interactive form
 ![Projects Gallery Preview](projectpreview/4.png)
 
 ### Designs Gallery
-![Projects Gallery Preview](projectpreview/2.png)
+![Projects Gallery Preview](projectpreview/1.png)
 
 ### Articles Gallery
 ![Projects Gallery Preview](projectpreview/3.png)
